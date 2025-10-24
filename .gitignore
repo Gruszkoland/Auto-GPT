@@ -1,12 +1,13 @@
 ## Original ignores
-autogpt/keys.py
-autogpt/*.json
-**/auto_gpt_workspace/*
+.github_access_token
+classic/original_autogpt/keys.py
+classic/original_autogpt/*.json
+auto_gpt_workspace/*
 *.mpeg
 .env
+# Root .env files
+/.env
 azure.yaml
-ai_settings.yaml
-last_run_ai_settings.yaml
 .vscode
 .idea/*
 auto-gpt.json
@@ -28,15 +29,11 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
 dist/
-/plugins/
-plugins_config.yaml
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -126,7 +123,6 @@ celerybeat.pid
 
 # Environments
 .direnv/
-.env
 .venv
 env/
 venv*/
@@ -160,3 +156,25 @@ openai/
 
 # news
 CURRENT_BULLETIN.md
+
+# AgBenchmark
+classic/benchmark/agbenchmark/reports/
+
+# Nodejs
+package-lock.json
+
+
+# Allow for locally private items
+# private
+pri*
+# ignore
+ig*
+.github_access_token
+LICENSE.rtf
+autogpt_platform/backend/settings.py
+/.auth
+/autogpt_platform/frontend/.auth
+
+*.ign.*
+.test-contents
+.claude/settings.local.json
